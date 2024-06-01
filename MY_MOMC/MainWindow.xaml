@@ -18,9 +18,9 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Enter Email" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="95,20,0,20"/>
-                    <TextBox Grid.Column="1" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,60,20" />
+                    <TextBox Name="tb_email" Grid.Column="1" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,60,20" />
                 </Grid>
-                <Button Content="Continue" Width="100" Height="30" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,40,0,0" Click="Button_Click">
+                <Button Content="Continue" Width="100" Height="30" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,40,0,0" Click="Continue_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#5CB85C"/>

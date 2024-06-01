@@ -1,0 +1,122 @@
+﻿[
+  {
+    "UserId": 1033231,
+    "UserEmailId": "304sowmya.yennam@gmail.com",
+    "UserMeetingDetails": [
+      {
+        "MeetingId": 100,
+        "MeetingName": "Meeting1",
+        "MeetingStartDateTime": "01-01-2023 10:30:00",
+        "MeetingEndDateTime": "01-01-2023 11:30:00",
+        "MeetingDuration": "01:00:00",
+        "MeetingAttendeesEmailName": [
+          {
+            "AttendeeEmail": "1@gmail.com",
+            "AttendeeName": "a"
+          },
+          {
+            "AttendeeEmail": "2@gmail.com",
+            "AttendeeName": "b"
+          }
+        ],
+        "Email": [
+          {
+            "To": [],
+            "Subject": "",
+            "Body": "",
+            "AttachedFiles": [],
+            "DrawBoardAttaches": [],
+            "EmailSentCount": 0
+          }
+        ]
+      },
+      {
+        "MeetingId": 101,
+        "MeetingName": "Meeting2",
+        "MeetingStartDateTime": "03-03-2023 21:00:00",
+        "MeetingEndDateTime": "03-03-2023 23:30:00",
+        "MeetingDuration": "02:30:00",
+        "MeetingAttendeesEmailName": [
+          {
+            "AttendeeEmail": "1@gmail.com",
+            "AttendeeName": "a"
+          },
+          {
+            "AttendeeEmail": "2@gmail.com",
+            "AttendeeName": "b"
+          }
+        ],
+        "Email": [
+          {
+            "To": [],
+            "Subject": "",
+            "Body": "",
+            "AttachedFiles": [],
+            "DrawBoardAttaches": [],
+            "EmailSentCount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "UserId": 1033232,
+    "UserEmailId": "19n81a05c9.sowmya@gmail.com",
+    "UserMeetingDetails": [
+      {
+        "MeetingId": 100,
+        "MeetingName": "Meeting01",
+        "MeetingStartDateTime": "01-01-2023 10:30:00",
+        "MeetingEndDateTime": "01-01-2023 11:30:00",
+        "MeetingDuration": "01:00:00",
+        "MeetingAttendeesEmailName": [
+          {
+            "Email": "1@gmail.com",
+            "Name": "a"
+          },
+          {
+            "Email": "2@gmail.com",
+            "Name": "b"
+          }
+        ],
+        "Email": [
+          {
+            "To": [],
+            "Subject": "",
+            "Body": "",
+            "AttachedFiles": [],
+            "DrawBoardAttaches": [],
+            "EmailSentCount": 0
+          }
+        ]
+      },
+      {
+        "MeetingId": 101,
+        "MeetingName": "Meeting02",
+        "MeetingStartDateTime": "03-03-2023 21:00:00",
+        "MeetingEndDateTime": "03-03-2023 23:30:00",
+        "MeetingDuration": "02:30:00",
+        "MeetingAttendeesEmailName": [
+          {
+            "Email": "1@gmail.com",
+            "Name": "a"
+          },
+          {
+            "Email": "2@gmail.com",
+            "Name": "b"
+          }
+        ],
+        "Email": [
+          {
+            "To": [],
+            "Subject": "",
+            "Body": "",
+            "AttachedFiles": [],
+            "DrawBoardAttaches": [],
+            "EmailSentCount": 0
+          }
+        ]
+      }
+    ]
+  }
+]
