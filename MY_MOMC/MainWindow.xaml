@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MY_MOMC"
         mc:Ignorable="d"
-        Title="Login to MOMC" Height="450" Width="800" WindowState="Maximized" Background="#428BCA">
+        Title="Login to MOMC" Height="800" Width="1200" WindowState="Maximized" Background="#428BCA">
     <Grid>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
         <Border Background="#E0E0E0" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="20">
             <StackPanel Margin="20">
                 <Image Source="C:\Users\304so\Downloads\mail.png" Width="50" Height="50" HorizontalAlignment="Center" Margin="0,60,0,0"/>

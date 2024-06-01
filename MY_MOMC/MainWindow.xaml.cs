@@ -24,7 +24,8 @@ namespace MY_MOMC
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            VerificationPage myUserControl = new VerificationPage();
+            this.Content = myUserControl;
         }
     }
 }
