@@ -1,0 +1,41 @@
+﻿<Window x:Class="MY_MOMC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MY_MOMC"
+        mc:Ignorable="d"
+        Title="Login to MOMC" Height="450" Width="800" WindowState="Maximized" Background="#428BCA">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Border Background="#E0E0E0" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="20">
+            <StackPanel Margin="20">
+                <Image Source="C:\Users\304so\Downloads\mail.png" Width="50" Height="50" HorizontalAlignment="Center" Margin="0,60,0,0"/>
+                <TextBlock Text="Login to MOMC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,40,0,0"/>
+                <TextBlock Text="Please enter your email address to proceed" HorizontalAlignment="Center" Margin="0,30,0,20"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Enter Email" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="95,20,0,20"/>
+                    <TextBox Grid.Column="1" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,60,20" />
+                </Grid>
+                <Button Content="Continue" Width="100" Height="30" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,40,0,0" Click="Button_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#5CB85C"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="Foreground" Value="Black"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
