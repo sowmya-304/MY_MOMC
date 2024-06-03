@@ -25,6 +25,7 @@ namespace MY_MOMC
         public void Page3_Loaded(object sender, RoutedEventArgs e)
         {
             
+
         }
 
         private void Cb_SelectMeeeting_SelectionChanged(object sender, SelectionChangedEventArgs e)
