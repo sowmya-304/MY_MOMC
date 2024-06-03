@@ -4,14 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MY_MOMC"
-             mc:Ignorable="d" 
+             mc:Ignorable="d" Loaded="Page2_Loaded"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="#428BCA">
         <Border Background="#E0E0E0" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="10">
             <StackPanel Margin="30">
                 <TextBlock Text="OTP Verification" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,60,0,0"/>
-                <Border Background="#E6FFE6" BorderBrush="#CCE0CC" BorderThickness="1" CornerRadius="5" Padding="10" Margin="0,40,0,0">
-                    <TextBlock Text="We've Sent an OTP to your email" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+                <Border Background="#E6FFE6" BorderBrush="#CCE0CC" BorderThickness="1" CornerRadius="5" Padding="10" Margin="0,40,0,0" Height="57" Width="402">
+                    <TextBlock Name="heading" TextWrapping="Wrap" HorizontalAlignment="Center"/>
                 </Border>
                 <Grid Margin="0,10,0,10">
                     <Grid.ColumnDefinitions>
@@ -19,15 +19,15 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Enter OTP" VerticalAlignment="Center" Margin="100,30,0,0"/>
-                    <TextBox Grid.Column="1" Width="200" VerticalAlignment="Center" Margin="20,30,0,0" HorizontalAlignment="Left"/>
+                    <TextBox Name="tb_otp" Grid.Column="1" Width="200" VerticalAlignment="Center" Margin="20,30,0,0" HorizontalAlignment="Left"/>
                 </Grid>
-                <TextBlock Text="time left: " Margin="100,20,0,0"/>
+                <TextBlock Name="lbl_timer" Margin="100,20,0,0"/>
                 <Grid Margin="20">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Verify OTP" Margin="100,0,0,0" Width="100" Height="30" Background="#5CB85C" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left">
+                    <Button Name="btn_verifyotp" Content="Verify OTP" Margin="100,0,0,0" Width="100" Height="30" Background="#5CB85C" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Click="VerifyOTP_Click">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#5CB85C"/>
@@ -41,7 +41,7 @@
                             </Style>
                         </Button.Style>
                     </Button>
-                    <Button Content="Resend OTP" Grid.Column="1" Width="100" Height="30" Background="#5CB85C" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="24,0,0,0">
+                    <Button Name="btn_ResendOTP" Content="Resend OTP" Grid.Column="1" Width="100" Height="30" Background="#5CB85C" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="24,0,0,0" Click="ResendOTP_Click">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#5CB85C"/>
@@ -56,7 +56,7 @@
                         </Button.Style>
                     </Button>
                 </Grid>
-                <Button Content="&lt;&lt;Back" Width="100" Height="30" Background="#5CB85C" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="0,40,0,0">
+                <Button Content="&lt;&lt;Back" Width="100" Height="30" Background="#5CB85C" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="0,40,0,0" Click="NavigateToMainWindow">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#5CB85C"/>

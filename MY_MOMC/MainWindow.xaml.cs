@@ -14,12 +14,17 @@ namespace MY_MOMC
     {
         internal List<MY_MOMC.Class.User> users;
         internal static string email;
+        internal static int randomDigits;
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += Page1_Loaded;
+        }
+        private void Page1_Loaded(object sender, RoutedEventArgs e)
+        {
             OnLoad();
         }
-        internal void OnLoad()
+        private void OnLoad()
         {
             string jsonFilePath = "C:\\MY_PROJECT\\MY_MOMC\\MY_MOMC\\data.json";
             string readJsonFile=File.ReadAllText(jsonFilePath);
@@ -34,8 +39,8 @@ namespace MY_MOMC
                 {
                     if (users.Any(user => user.UserEmailId == email))
                     {
-                        int randomDigits = GenerateRandomNumber(100000, 999999);
-                        var result = MessageBox.Show("OTP sent successfully! Are you sure you want to continue with this email", "Information", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                        randomDigits = GenerateRandomNumber(100000, 999999);
+                        var result = MessageBox.Show("OTP sent successfully! Are you sure you want to continue with this email ?", "Information", MessageBoxButton.OKCancel, MessageBoxImage.Information);
                         if (result == MessageBoxResult.OK)
                         {
                             MailMessage mail = new MailMessage();
@@ -51,7 +56,7 @@ namespace MY_MOMC
                             smtpClient.Send(mail);
 
                             MessageBox.Show("Email sent successfully.");
-                            VerificationPage vp = new VerificationPage();
+                            VerificationPage vp = new VerificationPage(this);
                             this.Content = vp;
                         }
                         else if (result == MessageBoxResult.Cancel)
@@ -74,7 +79,7 @@ namespace MY_MOMC
                 Console.WriteLine(ex.StackTrace);
             }
         }
-        private int GenerateRandomNumber(int min, int max)
+        internal static int GenerateRandomNumber(int min, int max)
         {
             using (RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider())
             {
@@ -88,6 +93,10 @@ namespace MY_MOMC
                 int randomResult = randomOffset + min;
                 return randomResult;
             }
+        }
+        public void NavigateToMainWindow()
+        {
+            this.Content = MainGrid;
         }
     }
 }
